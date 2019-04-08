@@ -27,6 +27,17 @@
 #define LED_PIO_ID    ID_PIOC
 #define LED_IDX       8u
 #define LED_IDX_MASK  (1u << LED_IDX)
+// LEDs
+#define LED_PIO      PIOC
+#define LED_PIO_ID   ID_PIOC
+#define LED_IDX      8
+#define LED_IDX_MASK (1 << LED_IDX)
+
+// Botão
+#define BUT_PIO      PIOA
+#define BUT_PIO_ID   ID_PIOA
+#define BUT_IDX      11
+#define BUT_IDX_MASK (1 << BUT_IDX)
 
 /************************************************************************/
 /* constants                                                            */
@@ -126,6 +137,18 @@ int main(void){
   // super loop
   // aplicacoes embarcadas não devem sair do while(1).
   while (1){
+	  if(!pio_get(BUT_PIO, PIO_INPUT, BUT_IDX_MASK))
+	  {
+		f_rtt_alarme = true;
+		for (int i=0; i<5; i++)
+		{
+			pio_clear(LED_PIO, LED_IDX_MASK);  // Limpa o pino LED_PIO_PIN
+			delay_ms(200);                         // delay
+			pio_set(LED_PIO, LED_IDX_MASK);    // Ativa o pino LED_PIO_PIN
+			delay_ms(200);                         // delay
+		}  
+	  }
+	  
     if (f_rtt_alarme){
       
       /*
