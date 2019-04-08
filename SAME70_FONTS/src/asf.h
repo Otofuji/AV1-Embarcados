@@ -87,6 +87,9 @@
 // From module: Part identification macros
 #include <parts.h>
 
+// From module: QSPI - QUAD Serial Peripheral Interface
+#include <qspi.h>
+
 // From module: RTT - Real Time Timer
 #include <rtt.h>
 
@@ -100,11 +103,18 @@
 #include <spi_master.h>
 #include <spi_master.h>
 
+// From module: SPI - SAM implementation
+#include <usart_spi.h>
+#include <usart_spi.h>
+
 // From module: SPI - Serial Peripheral Interface
 #include <spi.h>
 
 // From module: System Clock Control - SAME70 implementation
 #include <sysclk.h>
+
+// From module: USART - Univ. Syn Async Rec/Trans
+#include <usart.h>
 
 // From module: pio_handler support enabled
 #include <pio_handler.h>

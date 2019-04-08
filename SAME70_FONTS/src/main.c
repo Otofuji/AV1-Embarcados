@@ -20,6 +20,15 @@
 #include "asf.h"
 #include <math.h>
 #include <asf.h>
+#include <rtt.h>
+#include <qspi.h>
+#include <pio.h>
+#include <usart.h>
+#include <usart0.h>
+#include <usart1.h>
+#include <usart2.h>
+#include <usart_spi.h>
+#include <delay.h>
 #include "tfont.h"
 #include "sourcecodepro_28.h"
 #include "calibri_36.h"

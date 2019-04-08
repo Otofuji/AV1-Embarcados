@@ -2,7 +2,15 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
+src\ASF\common\components\memory\qspi_flash\s25fl1xx\s25fl1xx.c
+
+src\ASF\common\services\spi\sam_usart_spi\usart_spi.c
+
+src\ASF\sam\drivers\qspi\qspi.c
+
 src\ASF\sam\drivers\rtt\rtt.c
+
+src\ASF\sam\drivers\usart\usart.c
 
 src\main.c
 
