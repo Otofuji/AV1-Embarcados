@@ -56,6 +56,12 @@
 #include <compiler.h>
 #include <status_codes.h>
 
+// From module: Delay routines
+#include <delay.h>
+
+// From module: Display - ILI9488 LCD Controller (SPI)
+#include <ili9488.h>
+
 // From module: GPIO - General purpose Input/Output
 #include <gpio.h>
 
@@ -89,6 +95,13 @@
 
 // From module: SAME70 XPLD LED support enabled
 #include <led.h>
+
+// From module: SPI - SAM Implementation
+#include <spi_master.h>
+#include <spi_master.h>
+
+// From module: SPI - Serial Peripheral Interface
+#include <spi.h>
 
 // From module: System Clock Control - SAME70 implementation
 #include <sysclk.h>
